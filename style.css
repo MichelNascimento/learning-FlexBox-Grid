@@ -1,3 +1,6 @@
+
+/* ESTILIZAÇÃO GERAL */
+
 body, ul, li, p {
     margin: 0;
     padding: 0;
@@ -24,6 +27,8 @@ img {
     max-width: 100%;
     display: block;
 }
+
+/* HEADER */
 
 .header {
     background-color: #1d1e20;
@@ -129,4 +134,38 @@ img {
         flex: 1 0 200px;
         margin: 0 10px;
     }
+}
+
+/* CSS Grid 3 */
+
+.grid3 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 10px;
+}
+
+.grid3-item:nth-child(1) {
+    grid-row: 1 / 3;
+}
+
+.grid3-item {
+    display: grid;
+}
+
+.grid3-item img {
+    grid-column: 1;
+    grid-row: 1 / 3;
+    align-self: end;
+}
+
+.grid3-item p {
+    background: rgba(0, 0, 0, .6);
+    padding: 10px;
+    color: white;
+    grid-column: 1;
+    grid-row: 2;
+    align-self: end;
 }
