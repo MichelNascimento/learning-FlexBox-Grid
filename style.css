@@ -16,6 +16,11 @@ h1 {
     margin-top: 100px;
 }
 
+img {
+    max-width: 100%;
+    display: block;
+}
+
 .header {
     background-color: #1d1e20;
     display: flex;
@@ -39,3 +44,16 @@ h1 {
 }
 
 /* CSS FLEXBOX 1 */
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* USO DO SHORT HAND "FLEX" PARA USAR O flex-grow, flex-shrink e flex-basis em uma única linha. */
+.flex > div {
+    flex: 1 1 200px;
+    margin:  10px;
+}
